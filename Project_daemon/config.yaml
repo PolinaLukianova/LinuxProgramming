@@ -1,0 +1,20 @@
+source_dir: "/home/vboxuser/Project_mybackup/data"
+backup_dir: "/home/vboxuser/Project_mybackup/backups"
+
+interval_seconds: 20
+max_backups: 7
+
+log_level: "INFO"
+
+owner_user: "vboxuser"
+owner_group: "vboxuser"
+
+backup_dir_mode: 700
+
+exclude_patterns:
+- "*.tmp"
+- "cache/*"
+
+dry_run: false
+
+status_file: "/home/vboxuser/Project_mybackup/status.json"
